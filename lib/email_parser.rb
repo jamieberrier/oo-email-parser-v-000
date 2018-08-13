@@ -13,7 +13,7 @@ class EmailParser
   end
 
   def parse
-    email_array = emails.delete!(',').lines(' ')
+    email_array = emails.delete!(',').split(' ')
     email_array[0].rstrip!
     email_array[1].strip!
     email_array
