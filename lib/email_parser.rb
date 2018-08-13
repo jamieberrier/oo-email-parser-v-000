@@ -13,7 +13,7 @@ class EmailParser
   end
 
   def parse
-    emails.lines($/)
+    emails.lines(',')
 
   end
 
