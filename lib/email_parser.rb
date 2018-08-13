@@ -15,7 +15,7 @@ class EmailParser
   def parse
     emails_no_comma = emails.delete(",")
     email_array = emails_no_comma.split(' ')
-    email_array.uniq!
+    email_array
   end
 
 end
