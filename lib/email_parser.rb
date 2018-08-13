@@ -13,10 +13,8 @@ class EmailParser
   end
 
   def parse
-    binding.pry
     emails_no_comma = emails.delete(",")
     email_array = emails_no_comma.split(' ')
-    
     email_array
   end
 
