@@ -14,8 +14,8 @@ class EmailParser
 
   def parse
     email_array = emails.lines(',')
-    email_array[0].strip!
-    email_array[1]rstrip!
+    email_array[0].rstrip!
+    email_array[1]strip!
 
   end
 
