@@ -14,7 +14,7 @@ class EmailParser
 
   def parse
     binding.pry
-    emails_no_comma = emails.delete!(",")
+    emails_no_comma = emails.delete(",")
     email_array = emails_no_comma.split(' ')
     email_array[0].rstrip!
     email_array[1].strip!
